@@ -1,0 +1,33 @@
+#root {
+  width: 100%;
+}
+
+/* 课程列表容器 */
+.course-list {
+  width: 100%;
+}
+
+/* 课程项 */
+.course-item {
+  position: relative;
+}
+
+/* 展开描述动画 */
+.course-description {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
